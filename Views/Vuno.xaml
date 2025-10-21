@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emedrandaS3Taller3.Views.Vuno"
+             Title="Vuno">
+    <VerticalStackLayout>
+        <Label 
+            Text="Vista uno"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="txtusuario"
+               Placeholder="Ingresa el usuario"/>
+        <Entry x:Name="txtclave"
+               IsPassword="True"
+       Placeholder="Ingresa la clave"/>
+        <Button x:Name="btnAbrir"
+                Text="Abrir Ventana"
+                Clicked="btnAbrir_Clicked"/>
+            <Button x:Name="btnRegistro"
+            Text="Abrir Ventana de registro"
+            Clicked="btnRegistro_Clicked"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

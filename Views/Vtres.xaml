@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="emedrandaS3Taller3.Views.Vtres"
+             Title="Vtres">
+    <VerticalStackLayout>
+        <Label 
+            Text="Vista 3 - Guardar Usaurio"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="txtusuariov3"
+            Placeholder="Ingresa el usuario"/>
+        <Entry x:Name="txtclavev3"
+            Placeholder="Ingresa la clave"/>
+
+        <Button x:Name="btnsalir"
+                Text="Guardar"
+                Clicked="btnsalir_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
