@@ -4,11 +4,11 @@
              x:Class="emedrandaS3Taller3.Views.Vdos"
              Title="Vdos">
     <VerticalStackLayout>
-        <Label 
+        <Label Style="{StaticResource LabelGlobal}"
             Text="Vista uno"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Label x:Name="lbldato1" TextColor="Red"></Label>
-        <Label x:Name="lbldato2" TextColor="Red"></Label>
+        <Label x:Name="lbldato1" Style="{StaticResource LabelGlobal}"></Label>
+        <Label x:Name="lbldato2" Style="{StaticResource LabelGlobal}"></Label>
     </VerticalStackLayout>
 </ContentPage>

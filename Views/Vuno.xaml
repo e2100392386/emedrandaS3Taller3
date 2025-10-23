@@ -3,8 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="emedrandaS3Taller3.Views.Vuno"
              Title="Vuno">
+    <ContentPage.Resources>
+        <Style x:Key="estiloLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="TextColor" Value="Red"/>
+        </Style>
+        <Style x:Key="estiloButton" TargetType="Button">
+            <Setter Property="Background" Value="Yellow"/>
+            <Setter Property="TextColor" Value="Blue"/>
+        </Style>
+    </ContentPage.Resources>
+    
     <VerticalStackLayout>
         <Label 
+            Style="{StaticResource estiloLabel}"
             Text="Vista uno"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
@@ -13,10 +25,12 @@
         <Entry x:Name="txtclave"
                IsPassword="True"
        Placeholder="Ingresa la clave"/>
-        <Button x:Name="btnAbrir"
+        <Button Style="{StaticResource estiloButton}" 
+            x:Name="btnAbrir"
                 Text="Abrir Ventana"
                 Clicked="btnAbrir_Clicked"/>
-            <Button x:Name="btnRegistro"
+        <Button Style="{StaticResource estiloButton}" 
+                x:Name="btnRegistro"
             Text="Abrir Ventana de registro"
             Clicked="btnRegistro_Clicked"/>
         

@@ -3,6 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="emedrandaS3Taller3.Views.Vtres"
              Title="Vtres">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="TextColor" Value="Blue"/>
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="Aqua"/>
+        </Style>
+    </ContentPage.Resources>
     <VerticalStackLayout>
         <Label 
             Text="Vista 3 - Guardar Usaurio"
@@ -12,7 +21,6 @@
             Placeholder="Ingresa el usuario"/>
         <Entry x:Name="txtclavev3"
             Placeholder="Ingresa la clave"/>
-
         <Button x:Name="btnsalir"
                 Text="Guardar"
                 Clicked="btnsalir_Clicked"/>
